@@ -21,17 +21,17 @@
 
 package com.threerings.presents.dobj {
 
+import aspire.util.Cloneable;
+import aspire.util.Equalable;
+import aspire.util.Log;
+import aspire.util.Util;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
 import com.threerings.io.TypedArray;
-
 import com.threerings.util.ArrayIterator;
-import com.threerings.util.Cloneable;
-import com.threerings.util.Equalable;
 import com.threerings.util.Iterator;
-import com.threerings.util.Log;
-import com.threerings.util.Util;
 
 /**
  * The distributed set class provides a means by which an unordered set of

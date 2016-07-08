@@ -21,7 +21,7 @@
 
 package com.threerings.crowd.chat.client {
 
-import com.threerings.util.StringUtil;
+import aspire.util.StringUtil;
 
 import com.threerings.crowd.chat.data.ChatCodes;
 import com.threerings.crowd.util.CrowdContext;

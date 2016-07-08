@@ -21,11 +21,11 @@
 
 package com.threerings.presents.dobj {
 
+import aspire.util.Joiner;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
-
-import com.threerings.util.Joiner;
 
 public /* abstract */ class DEvent
     implements Streamable

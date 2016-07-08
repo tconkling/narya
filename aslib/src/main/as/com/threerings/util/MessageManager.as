@@ -21,7 +21,11 @@
 
 package com.threerings.util {
 
-import mx.resources.Locale;
+import aspire.util.ClassUtil;
+import aspire.util.Log;
+import aspire.util.Map;
+import aspire.util.Maps;
+
 import mx.resources.ResourceManager;
 
 /**

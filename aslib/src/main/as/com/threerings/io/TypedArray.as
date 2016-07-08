@@ -21,10 +21,10 @@
 
 package com.threerings.io {
 
-import flash.utils.ByteArray;
+import aspire.util.ClassUtil;
+import aspire.util.Cloneable;
 
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Cloneable;
+import flash.utils.ByteArray;
 
 public dynamic class TypedArray extends Array
     implements Cloneable

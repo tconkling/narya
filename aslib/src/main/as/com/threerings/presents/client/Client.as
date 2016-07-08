@@ -20,16 +20,10 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.presents.client {
-import flash.events.EventDispatcher;
-import flash.events.TimerEvent;
-import flash.utils.Timer;
 
-import com.threerings.util.DelayUtil;
-import com.threerings.util.Log;
-import com.threerings.util.Long;
-import com.threerings.util.Throttle;
+import aspire.util.Log;
+import aspire.util.Throttle;
 
-import com.threerings.presents.client.InvocationService_ConfirmListener;
 import com.threerings.presents.data.ClientObject;
 import com.threerings.presents.data.InvocationCodes;
 import com.threerings.presents.data.TimeBaseMarshaller;
@@ -40,6 +34,13 @@ import com.threerings.presents.net.Credentials;
 import com.threerings.presents.net.PingRequest;
 import com.threerings.presents.net.PongResponse;
 import com.threerings.presents.net.ThrottleUpdatedMessage;
+import com.threerings.util.DelayUtil;
+import com.threerings.util.Long;
+
+import flash.events.EventDispatcher;
+import flash.events.TimerEvent;
+import flash.utils.Timer;
+import flash.utils.getTimer;
 
 public class Client extends EventDispatcher
 {
@@ -392,7 +393,7 @@ public class Client extends EventDispatcher
 
         // send a few pings to the server to establish the clock offset between this client and
         // server standard time
-        establishClockDelta(flash.utils.getTimer());
+        establishClockDelta(getTimer());
 
         // log.debug("TimeBaseService: " + requireService(TimeBaseService));
     }
@@ -407,7 +408,7 @@ public class Client extends EventDispatcher
             return;
         }
 
-        var now :uint = flash.utils.getTimer();
+        var now :uint = getTimer();
         if (_dcalc != null) {
             // if our current calculator is done, clear it out
             if (_dcalc.isDone()) {

@@ -20,18 +20,18 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.presents.dobj {
-import flash.errors.IllegalOperationError;
-import flash.events.EventDispatcher;
 
-import org.osflash.signals.Signal;
+import aspire.util.ClassUtil;
+import aspire.util.Joiner;
+import aspire.util.Log;
 
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
 
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Joiner;
-import com.threerings.util.Log;
+import flash.errors.IllegalOperationError;
+
+import org.osflash.signals.Signal;
 
 public class DObject // extends EventDispatcher
     implements Streamable

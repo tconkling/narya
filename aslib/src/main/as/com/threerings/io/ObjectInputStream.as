@@ -21,14 +21,15 @@
 
 package com.threerings.io {
 
+import aspire.util.ClassUtil;
+import aspire.util.Log;
+
+import com.threerings.util.Long;
+
 import flash.errors.IOError;
 import flash.errors.MemoryError;
 import flash.utils.ByteArray;
 import flash.utils.IDataInput;
-
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Log;
-import com.threerings.util.Long;
 
 public class ObjectInputStream
 {

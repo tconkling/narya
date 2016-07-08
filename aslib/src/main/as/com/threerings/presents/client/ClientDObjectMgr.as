@@ -20,14 +20,10 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.presents.client {
-import flash.events.Event;
-import flash.events.TimerEvent;
-import flash.utils.Timer;
-import flash.utils.getTimer;
 
-import com.threerings.util.Log;
-import com.threerings.util.Map;
-import com.threerings.util.Maps;
+import aspire.util.Log;
+import aspire.util.Map;
+import aspire.util.Maps;
 
 import com.threerings.presents.dobj.CompoundEvent;
 import com.threerings.presents.dobj.DEvent;
@@ -48,6 +44,10 @@ import com.threerings.presents.net.SubscribeRequest;
 import com.threerings.presents.net.UnsubscribeRequest;
 import com.threerings.presents.net.UnsubscribeResponse;
 import com.threerings.presents.net.UpdateThrottleMessage;
+
+import flash.events.TimerEvent;
+import flash.utils.Timer;
+import flash.utils.getTimer;
 
 /**
  * The client distributed object manager manages a set of proxy objects

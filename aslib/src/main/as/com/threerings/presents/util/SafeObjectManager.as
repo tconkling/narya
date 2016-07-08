@@ -21,15 +21,15 @@
 
 package com.threerings.presents.util {
 
-import flash.utils.Dictionary;
-
-import com.threerings.util.Log;
+import aspire.util.Log;
 
 import com.threerings.presents.dobj.DObject;
 import com.threerings.presents.dobj.DObjectManager;
 import com.threerings.presents.dobj.ObjectAccessError;
 import com.threerings.presents.dobj.ObjectDeathAdapter;
 import com.threerings.presents.dobj.ObjectDestroyedEvent;
+
+import flash.utils.Dictionary;
 
 /**
  * Safely manages subscriptions and provides access to objects.

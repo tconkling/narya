@@ -21,13 +21,13 @@
 
 package com.threerings.io {
 
+import aspire.util.Log;
+
 import flash.events.EventDispatcher;
 import flash.events.ProgressEvent;
 import flash.net.Socket;
 import flash.utils.ByteArray;
 import flash.utils.Endian;
-
-import com.threerings.util.Log;
 
 /**
  * Reads socket data until a complete frame is available.

@@ -21,13 +21,13 @@
 
 package com.threerings.io.streamers {
 
+import aspire.util.ClassUtil;
+import aspire.util.Set;
+import aspire.util.Sets;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamer;
-
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Set;
-import com.threerings.util.Sets;
 
 /**
  * Streamer for Sets.

@@ -21,9 +21,9 @@
 
 package com.threerings.presents.net {
 
-import com.threerings.io.ObjectOutputStream;
+import aspire.util.Joiner;
 
-import com.threerings.util.Joiner;
+import com.threerings.io.ObjectOutputStream;
 import com.threerings.util.Name;
 
 public class UsernamePasswordCreds extends Credentials

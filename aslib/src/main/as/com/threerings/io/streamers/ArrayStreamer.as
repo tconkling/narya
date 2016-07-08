@@ -21,19 +21,19 @@
 
 package com.threerings.io.streamers {
 
+import aspire.util.ClassUtil;
+import aspire.util.Enum;
+import aspire.util.Log;
+
 import com.threerings.io.ArrayMask;
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamer;
 import com.threerings.io.Translations;
 import com.threerings.io.TypedArray;
-
 import com.threerings.util.Byte;
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Enum;
 import com.threerings.util.Float;
 import com.threerings.util.Integer;
-import com.threerings.util.Log;
 import com.threerings.util.Long;
 import com.threerings.util.Short;
 import com.threerings.util.langBoolean;
@@ -97,7 +97,7 @@ public class ArrayStreamer extends Streamer
             for (ii = 0; ii < arr.length; ii++) {
                 out.writeShort(int(arr[ii]));
             }
-            
+
         } else if (_elementType == Boolean) {
             for (ii = 0; ii < arr.length; ii++) {
                 out.writeBoolean(Boolean(arr[ii]));
@@ -138,7 +138,7 @@ public class ArrayStreamer extends Streamer
         } else if (_elementType == PrimitiveShort) {
             for (ii = 0; ii < arr.length; ii++) {
                 arr[ii] = ins.readShort();
-            }            
+            }
 
         } else if (_elementType == Boolean) {
             for (ii = 0; ii < arr.length; ii++) {

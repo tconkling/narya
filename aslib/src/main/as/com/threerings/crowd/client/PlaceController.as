@@ -21,11 +21,10 @@
 
 package com.threerings.crowd.client  {
 
-import com.threerings.util.Controller;
-
 import com.threerings.crowd.data.PlaceConfig;
 import com.threerings.crowd.data.PlaceObject;
 import com.threerings.crowd.util.CrowdContext;
+import com.threerings.util.Controller;
 
 /**
  * Controls the user interface that is used to display a place. When the
@@ -128,7 +127,7 @@ public /*abstract*/ class PlaceController extends Controller
             setPlaceView();
         }
 
-        // let our delegates know what's up 
+        // let our delegates know what's up
         applyToDelegates(function (del :PlaceControllerDelegate) :void {
             del.willEnterPlace(plobj);
         });
@@ -147,7 +146,7 @@ public /*abstract*/ class PlaceController extends Controller
      */
     public function mayLeavePlace (plobj :PlaceObject) :void
     {
-        // let our delegates know what's up 
+        // let our delegates know what's up
         applyToDelegates(function (del :PlaceControllerDelegate) :void {
             del.mayLeavePlace(plobj);
         });
@@ -162,7 +161,7 @@ public /*abstract*/ class PlaceController extends Controller
      */
     public function didLeavePlace (plobj :PlaceObject) :void
     {
-        // let our delegates know what's up 
+        // let our delegates know what's up
         applyToDelegates(function (del :PlaceControllerDelegate) :void {
             del.didLeavePlace(plobj);
         });
@@ -229,15 +228,15 @@ public /*abstract*/ class PlaceController extends Controller
     {
         _ctx.setPlaceView(_view);
     }
-    
+
     /**
      * Clears out the place view.  By default, this calls {CrowdContext#clearPlaceView}.
-     */ 
+     */
     protected function clearPlaceView () :void
     {
         _ctx.clearPlaceView(_view);
     }
-    
+
     /** A reference to the active client context. */
     protected var _ctx :CrowdContext;
 

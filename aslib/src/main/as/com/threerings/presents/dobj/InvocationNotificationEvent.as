@@ -21,10 +21,10 @@
 
 package com.threerings.presents.dobj {
 
+import aspire.util.Joiner;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
-
-import com.threerings.util.Joiner;
 
 /**
  * Used to dispatch an invocation notification from the server to a

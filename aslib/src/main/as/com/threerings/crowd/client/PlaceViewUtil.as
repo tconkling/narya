@@ -21,14 +21,12 @@
 
 package com.threerings.crowd.client {
 
-import flash.display.DisplayObject;
-import flash.display.DisplayObjectContainer;
-
-import mx.core.IRawChildrenContainer;
-
-import com.threerings.util.Log;
+import aspire.util.Log;
 
 import com.threerings.crowd.data.PlaceObject;
+
+import flash.display.DisplayObject;
+import flash.display.DisplayObjectContainer;
 
 /**
  * Provides a mechanism for dispatching notifications to all user
@@ -91,7 +89,7 @@ public class PlaceViewUtil
 
         if (root is DisplayObjectContainer) {
             // a little type-unsafety so that we don't have to write two blocks
-            var o :Object= (root is IRawChildrenContainer) ? 
+            var o :Object= (root is IRawChildrenContainer) ?
                 IRawChildrenContainer(root).rawChildren : root;
             var nn :int = int(o.numChildren);
             for (var ii :int = 0; ii < nn; ii++) {

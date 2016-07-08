@@ -21,15 +21,15 @@
 
 package com.threerings.crowd.chat.client {
 
-import com.threerings.util.Name;
-import com.threerings.util.ResultAdapter;
-import com.threerings.util.ResultListener;
-import com.threerings.util.StringUtil;
+import aspire.util.StringUtil;
 
 import com.threerings.crowd.chat.data.ChatCodes;
 import com.threerings.crowd.client.CrowdClient;
 import com.threerings.crowd.data.BodyObject;
 import com.threerings.crowd.util.CrowdContext;
+import com.threerings.util.Name;
+import com.threerings.util.ResultAdapter;
+import com.threerings.util.ResultListener;
 
 public class TellHandler extends CommandHandler
 {

@@ -21,10 +21,10 @@
 
 package com.threerings.presents.net {
 
+import aspire.util.StringUtil;
+
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.TypedArray;
-
-import com.threerings.util.StringUtil;
 
 public class AuthRequest extends UpstreamMessage
 {

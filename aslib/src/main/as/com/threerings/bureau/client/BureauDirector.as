@@ -21,9 +21,9 @@
 
 package com.threerings.bureau.client {
 
-import com.threerings.util.Log;
-import com.threerings.util.Map;
-import com.threerings.util.Maps;
+import aspire.util.Log;
+import aspire.util.Map;
+import aspire.util.Maps;
 
 import com.threerings.presents.client.BasicDirector;
 import com.threerings.presents.client.Client;
@@ -129,7 +129,7 @@ public class BureauDirector extends BasicDirector
             _bureauService.agentCreationFailed(oid);
             return;
         }
-        
+
         _agents.put(oid, agent);
         _bureauService.agentCreated(oid);
     }
@@ -152,7 +152,7 @@ public class BureauDirector extends BasicDirector
 
         // Set up our decoder so we can receive method calls
         // from the server
-        var receiver :BureauReceiver = 
+        var receiver :BureauReceiver =
             new ReceiverDelegator(createAgentFromId, destroyAgent);
 
         client.getInvocationDirector().
@@ -168,8 +168,8 @@ public class BureauDirector extends BasicDirector
     }
 
     /**
-     * Called when it is time to create an Agent. Subclasses should read the 
-     * <code>agentObject</code>'s type and/or properties to determine what kind of Agent to 
+     * Called when it is time to create an Agent. Subclasses should read the
+     * <code>agentObject</code>'s type and/or properties to determine what kind of Agent to
      * create.
      * @param agentObj the distributed and object
      * @return a new Agent that will govern the distributed object

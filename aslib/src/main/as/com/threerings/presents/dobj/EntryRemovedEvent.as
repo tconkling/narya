@@ -20,13 +20,13 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.presents.dobj {
-    
+
+import aspire.util.Joiner;
+import aspire.util.Log;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
-
 import com.threerings.util.Boxed;
-import com.threerings.util.Joiner;
-import com.threerings.util.Log;
 
 /**
  * An entry removed event is dispatched when an entry is removed from a

@@ -21,13 +21,13 @@
 
 package com.threerings.crowd.chat.data {
 
-import flash.utils.getTimer;
+import aspire.util.ClassUtil;
 
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
 
-import com.threerings.util.ClassUtil;
+import flash.utils.getTimer;
 
 /**
  * The abstract base class of all the client-side ChatMessage objects.

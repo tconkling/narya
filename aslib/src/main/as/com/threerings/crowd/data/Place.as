@@ -21,11 +21,11 @@
 
 package com.threerings.crowd.data {
 
+import aspire.util.Hashable;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.SimpleStreamableObject;
-
-import com.threerings.util.Hashable;
 
 /**
  * Contains information on the current place occupied by a body.

@@ -21,9 +21,10 @@
 
 package com.threerings.crowd.chat.client {
 
-import com.threerings.util.Log;
+import aspire.util.Log;
+import aspire.util.StringUtil;
+
 import com.threerings.util.Name;
-import com.threerings.util.StringUtil;
 
 /**
  * A chat filter that can filter out curse words from user chat.

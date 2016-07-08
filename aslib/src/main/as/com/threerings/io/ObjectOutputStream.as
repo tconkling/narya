@@ -21,15 +21,16 @@
 
 package com.threerings.io {
 
+import aspire.util.ClassUtil;
+import aspire.util.Log;
+import aspire.util.Map;
+import aspire.util.Maps;
+
+import com.threerings.util.Long;
+import com.threerings.util.Short;
+
 import flash.utils.ByteArray;
 import flash.utils.IDataOutput;
-
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Log;
-import com.threerings.util.Long;
-import com.threerings.util.Map;
-import com.threerings.util.Maps;
-import com.threerings.util.Short;
 
 public class ObjectOutputStream
 {

@@ -21,11 +21,11 @@
 
 package com.threerings.presents.net {
 
+import aspire.util.Log;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
-
-import com.threerings.util.Log;
 
 /**
  * A BoostrapData object is communicated back to the client after authentication has succeeded and

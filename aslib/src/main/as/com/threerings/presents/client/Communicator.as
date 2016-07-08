@@ -20,22 +20,13 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.presents.client {
-import flash.events.Event;
-import flash.events.IOErrorEvent;
-import flash.events.SecurityErrorEvent;
-import flash.events.TimerEvent;
-import flash.net.Socket;
-import flash.utils.ByteArray;
-import flash.utils.Endian;
-import flash.utils.Timer;
+
+import aspire.util.Log;
 
 import com.threerings.io.FrameAvailableEvent;
 import com.threerings.io.FrameReader;
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
-
-import com.threerings.util.Log;
-
 import com.threerings.presents.data.AuthCodes;
 import com.threerings.presents.net.AuthRequest;
 import com.threerings.presents.net.AuthResponse;
@@ -45,6 +36,16 @@ import com.threerings.presents.net.DownstreamMessage;
 import com.threerings.presents.net.LogoffRequest;
 import com.threerings.presents.net.ThrottleUpdatedMessage;
 import com.threerings.presents.net.UpstreamMessage;
+
+import flash.events.Event;
+import flash.events.IOErrorEvent;
+import flash.events.SecurityErrorEvent;
+import flash.events.TimerEvent;
+import flash.net.Socket;
+import flash.utils.ByteArray;
+import flash.utils.Endian;
+import flash.utils.Timer;
+import flash.utils.getTimer;
 
 public class Communicator
 {
@@ -384,7 +385,7 @@ public class Communicator
      */
     internal function updateWriteStamp () :void
     {
-        _lastWrite = flash.utils.getTimer();
+        _lastWrite = getTimer();
     }
 
     protected var _client :Client;

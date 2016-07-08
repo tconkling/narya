@@ -21,11 +21,10 @@
 
 package com.threerings.presents.net {
 
+import aspire.util.Joiner;
+
 import com.adobe.crypto.MD5;
-
 import com.threerings.io.ObjectOutputStream;
-
-import com.threerings.util.Joiner;
 
 /**
  * Extends the basic credentials to provide bureau-specific fields.

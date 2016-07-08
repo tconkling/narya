@@ -21,11 +21,11 @@
 
 package com.threerings.presents.data {
 
+import aspire.util.Cloneable;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.SimpleStreamableObject;
-
-import com.threerings.util.Cloneable;
 import com.threerings.util.Long;
 
 /**

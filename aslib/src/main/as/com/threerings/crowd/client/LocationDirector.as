@@ -21,19 +21,7 @@
 
 package com.threerings.crowd.client {
 
-import flash.utils.getTimer;
-
-import com.threerings.util.Log;
-import com.threerings.util.ObserverList;
-import com.threerings.util.ResultListener;
-
-import com.threerings.presents.client.BasicDirector;
-import com.threerings.presents.client.Client;
-import com.threerings.presents.client.ClientEvent;
-import com.threerings.presents.dobj.DObject;
-import com.threerings.presents.dobj.ObjectAccessError;
-import com.threerings.presents.dobj.Subscriber;
-import com.threerings.presents.dobj.SubscriberAdapter;
+import aspire.util.Log;
 
 import com.threerings.crowd.data.BodyObject;
 import com.threerings.crowd.data.CrowdCodes;
@@ -41,6 +29,17 @@ import com.threerings.crowd.data.LocationMarshaller;
 import com.threerings.crowd.data.PlaceConfig;
 import com.threerings.crowd.data.PlaceObject;
 import com.threerings.crowd.util.CrowdContext;
+import com.threerings.presents.client.BasicDirector;
+import com.threerings.presents.client.Client;
+import com.threerings.presents.client.ClientEvent;
+import com.threerings.presents.dobj.DObject;
+import com.threerings.presents.dobj.ObjectAccessError;
+import com.threerings.presents.dobj.Subscriber;
+import com.threerings.presents.dobj.SubscriberAdapter;
+import com.threerings.presents.util.ObserverList;
+import com.threerings.util.ResultListener;
+
+import flash.utils.getTimer;
 
 /**
  * The location director provides a means by which entities on the client can request to move from
@@ -465,7 +464,7 @@ public class LocationDirector extends BasicDirector
         // clear out our old place information
         mayLeavePlace();
         didLeavePlace();
-        
+
         // move to the new place
         moveTo(placeId);
     }

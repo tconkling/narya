@@ -21,13 +21,14 @@
 
 package com.threerings.util {
 
+import aspire.util.Map;
+import aspire.util.Maps;
+import aspire.util.maps.ForwardingMap;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.Streamable;
 import com.threerings.io.streamers.MapStreamer;
-
-import com.threerings.util.Maps;
-import com.threerings.util.maps.ForwardingMap;
 
 /**
  * A Map that can be sent over the wire, bearing in mind that all keys and values must

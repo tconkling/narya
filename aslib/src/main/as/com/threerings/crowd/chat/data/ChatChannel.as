@@ -21,12 +21,11 @@
 
 package com.threerings.crowd.chat.data {
 
+import aspire.util.Comparable;
+import aspire.util.Equalable;
+import aspire.util.Hashable;
+
 import com.threerings.io.SimpleStreamableObject;
-
-import com.threerings.util.Comparable;
-import com.threerings.util.Equalable;
-import com.threerings.util.Hashable;
-
 import com.threerings.presents.dobj.DSet_Entry;
 
 /**

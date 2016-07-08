@@ -21,15 +21,14 @@
 
 package com.threerings.crowd.chat.client {
 
-import com.threerings.util.MessageBundle;
-import com.threerings.util.Name;
-import com.threerings.util.ObserverList;
-import com.threerings.util.Set;
-import com.threerings.util.Sets;
-
-import com.threerings.presents.client.BasicDirector;
+import aspire.util.Set;
+import aspire.util.Sets;
 
 import com.threerings.crowd.util.CrowdContext;
+import com.threerings.presents.client.BasicDirector;
+import com.threerings.presents.util.ObserverList;
+import com.threerings.util.MessageBundle;
+import com.threerings.util.Name;
 
 /**
  * Manages the mutelist.

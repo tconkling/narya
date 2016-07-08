@@ -20,26 +20,12 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 package com.threerings.crowd.chat.client {
-import com.threerings.util.Arrays;
-import com.threerings.util.Log;
-import com.threerings.util.Long;
-import com.threerings.util.Map;
-import com.threerings.util.Maps;
-import com.threerings.util.MessageBundle;
-import com.threerings.util.MessageManager;
-import com.threerings.util.Name;
-import com.threerings.util.ObserverList;
-import com.threerings.util.ResultListener;
-import com.threerings.util.StringUtil;
-import com.threerings.util.TimeUtil;
 
-import com.threerings.presents.client.BasicDirector;
-import com.threerings.presents.client.Client;
-import com.threerings.presents.client.ClientEvent;
-import com.threerings.presents.client.InvocationAdapter;
-import com.threerings.presents.dobj.DObject;
-import com.threerings.presents.dobj.MessageEvent;
-import com.threerings.presents.dobj.MessageListener;
+import aspire.util.Arrays;
+import aspire.util.Log;
+import aspire.util.Map;
+import aspire.util.Maps;
+import aspire.util.StringUtil;
 
 import com.threerings.crowd.chat.data.ChatChannel;
 import com.threerings.crowd.chat.data.ChatCodes;
@@ -54,6 +40,20 @@ import com.threerings.crowd.data.BodyObject;
 import com.threerings.crowd.data.CrowdCodes;
 import com.threerings.crowd.data.PlaceObject;
 import com.threerings.crowd.util.CrowdContext;
+import com.threerings.presents.client.BasicDirector;
+import com.threerings.presents.client.Client;
+import com.threerings.presents.client.ClientEvent;
+import com.threerings.presents.client.InvocationAdapter;
+import com.threerings.presents.dobj.DObject;
+import com.threerings.presents.dobj.MessageEvent;
+import com.threerings.presents.dobj.MessageListener;
+import com.threerings.presents.util.ObserverList;
+import com.threerings.util.Long;
+import com.threerings.util.MessageBundle;
+import com.threerings.util.MessageManager;
+import com.threerings.util.Name;
+import com.threerings.util.ResultListener;
+import com.threerings.util.TimeUtil;
 
 /**
  * The chat director is the client side coordinator of all chat related services. It handles both

@@ -21,18 +21,15 @@
 
 package com.threerings.crowd.data {
 
+import aspire.util.ClassUtil;
+import aspire.util.Cloneable;
+
 import com.threerings.io.ObjectInputStream;
 import com.threerings.io.ObjectOutputStream;
 import com.threerings.io.SimpleStreamableObject;
-
-import com.threerings.util.ClassUtil;
-import com.threerings.util.Cloneable;
+import com.threerings.presents.dobj.DSet_Entry;
 import com.threerings.util.Integer;
 import com.threerings.util.Name;
-
-import com.threerings.presents.dobj.DSet_Entry;
-
-import com.threerings.crowd.data.BodyObject;
 
 /**
  * The occupant info object contains all of the information about an

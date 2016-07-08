@@ -21,7 +21,7 @@
 
 package com.threerings.presents.client {
 
-import com.threerings.util.Config;
+import com.threerings.presents.util.Config;
 
 /**
  * Provides access to runtime configuration parameters for this package.

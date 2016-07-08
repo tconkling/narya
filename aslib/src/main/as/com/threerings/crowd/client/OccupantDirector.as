@@ -21,20 +21,17 @@
 
 package com.threerings.crowd.client {
 
-import com.threerings.util.Name;
-import com.threerings.util.ObserverList;
-
+import com.threerings.crowd.data.OccupantInfo;
+import com.threerings.crowd.data.PlaceObject;
+import com.threerings.crowd.util.CrowdContext;
 import com.threerings.presents.client.BasicDirector;
-import com.threerings.presents.client.Client;
 import com.threerings.presents.client.ClientEvent;
 import com.threerings.presents.dobj.EntryAddedEvent;
 import com.threerings.presents.dobj.EntryRemovedEvent;
 import com.threerings.presents.dobj.EntryUpdatedEvent;
 import com.threerings.presents.dobj.SetListener;
-
-import com.threerings.crowd.data.OccupantInfo;
-import com.threerings.crowd.data.PlaceObject;
-import com.threerings.crowd.util.CrowdContext;
+import com.threerings.presents.util.ObserverList;
+import com.threerings.util.Name;
 
 /**
  * The occupant director listens for occupants of places to enter and
