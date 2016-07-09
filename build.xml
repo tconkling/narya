@@ -66,11 +66,11 @@
   </target>
 
   <target name="compile" depends="-prepare" description="Builds the Java code.">
-    <ooojavac version="1.5" srcdir="${src.dir}" destdir="${classes.dir}"
+    <ooojavac version="1.7" srcdir="${src.dir}" destdir="${classes.dir}"
         classpathref="pom.path"/>
     <copy todir="${tclasses.dir}"><fileset dir="core/src/test/resources" includes="**"/></copy>
     <ooojavac srcdir="${tsrc.dir}" destdir="${tclasses.dir}"
-        version="1.5" classpathref="test.classpath"/>
+        version="1.7" classpathref="test.classpath"/>
   </target>
 
   <target name="aslib" depends="-prepare" description="Builds the ActionScript code">
@@ -135,7 +135,7 @@
     <taskdef name="grecord" classname="com.samskivert.depot.tools.GenRecordTask"
              classpathref="built.classpath"/>
     <!-- make sure the record class files are all compiled -->
-    <ooojavac version="1.5" srcdir="${src.dir}" destdir="${classes.dir}"
+    <ooojavac version="1.7" srcdir="${src.dir}" destdir="${classes.dir}"
         classpathref="pom.path">
       <include name="**/*Record.java"/>
     </ooojavac>
@@ -157,7 +157,7 @@
   <target name="gendobj" depends="-preptools"
           description="Generates additional methods for distributed object classes">
     <!-- make sure the dobject class files are all compiled -->
-    <ooojavac version="1.5" srcdir="${src.dir}" destdir="${classes.dir}"
+    <ooojavac version="1.7" srcdir="${src.dir}" destdir="${classes.dir}"
         classpathref="pom.path">
       <include name="**/*Object.java"/>
     </ooojavac>
@@ -170,7 +170,7 @@
   <target name="genservice" depends="-preptools"
           description="Generates marshaller and dispatcher classes for all invocation services">
     <!-- make sure the service class files are all compiled -->
-    <ooojavac version="1.5" srcdir="${src.dir}" destdir="${classes.dir}"
+    <ooojavac version="1.7" srcdir="${src.dir}" destdir="${classes.dir}"
         classpathref="pom.path">
       <include name="**/*Service.java"/>
       <exclude name="**/InvocationService.java"/>
@@ -209,7 +209,7 @@
   <target name="genreceiver" depends="-preptools"
           description="Generates sender and decoder classes for all invocation receivers">
     <!-- make sure the receiver class files are all compiled -->
-    <ooojavac version="1.5" srcdir="${src.dir}" destdir="${classes.dir}"
+    <ooojavac version="1.7" srcdir="${src.dir}" destdir="${classes.dir}"
         classpathref="pom.path">
       <include name="**/*Receiver.java"/>
       <exclude name="**/InvocationReceiver.java"/>
