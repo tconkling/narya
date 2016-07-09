@@ -7,10 +7,10 @@
     <version>7</version>
   </parent>
 
-  <groupId>com.threerings</groupId>
+  <groupId>com.timconkling</groupId>
   <artifactId>narya-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.16-SNAPSHOT</version>
+  <version>1.15</version>
 
   <name>Narya Parent</name>
   <description>Facilities for making networked multiplayer games.</description>
