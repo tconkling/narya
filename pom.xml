@@ -44,7 +44,6 @@
   <modules>
     <module>core</module>
     <module>tools</module>
-    <module>aslib</module>
   </modules>
 
   <build>
